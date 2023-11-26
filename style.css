@@ -1,0 +1,160 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans MT', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: #1b1b1b;
+    padding: 0px 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navbar a {
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 10px;
+}
+.navbar a:hover {
+    background-color: #41b4c3;
+    border-radius: 10px;
+}
+.active {
+    background-color: #439eaa;
+}
+
+
+
+/* jumbotron */
+.jumbotron {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.jumbotron h2 {
+    font-size: 3rem;
+    transform: translateY(0);
+    transition: 1s;
+}
+.jumbotron p {
+    text-align: center;
+    font-size: 1rem;
+    transition: 1s;
+}
+.jumbotron .btn {
+    background-color: #439eaa;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 1s, opacity 1s;
+    transform: translateY(-100);
+}
+.jumbotron img {
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+}
+.jumbotron:hover h2 {
+    transform: translateY(-100%);
+}
+.jumbotron:hover h2 {
+    animation-duration: 0.7s;
+    animation-delay: 2s;
+}
+.jumbotron:hover .btn{
+    opacity: 0.9;
+    background-color: #439eaa;
+    transform: translateY(-90%);
+}
+.jumbotron:hover img {
+    opacity: 0.3;
+}
+
+
+
+/* card */
+.row {
+    margin-top: 20px;
+    padding: 0px 10px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card {
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    max-width: 26rem;
+    text-align: center;
+}
+.card-body {
+    padding: 10px;
+}
+.card img {
+    height: auto;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+
+/* footer */
+.footer {
+    height: 30vh;
+    background-color: #1b1b1b;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sosmed {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.sosmed img {
+    background-color: #272626;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.sosmed img:hover {
+    background-color: #505050;
+}
+
+
+
+
+
